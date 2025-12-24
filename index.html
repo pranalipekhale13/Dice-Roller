@@ -4,13 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
-  
+<style>
+        .container {
+            text-align: center;
+            margin-top: 100px;
+            margin:auto;
+            border: 1px solid black;
+            width: 400px;
+            padding: 20px;
+        }
+        .heading {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 15px;
+            cursor: pointer;
+            align-items: center;
+        }
+        .btn:hover {
+            background-color: #d9d9d9;
+            color: black;
+        }
+        .dice-image {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
     <h1 class="heading">Dice Roller</h1>
-    <button id="rollButton" class="btn">Roll Dice</button>
     <img src="dice.png" alt="dice-image" class="dice-image"/>
+      <button id="rollButton" class="btn">Roll Dice</button>
 
     </div>
 </body>
