@@ -41,9 +41,32 @@
 <body>
     <div class="container">
     <h1 class="heading">Dice Roller</h1>
-    <img src="dice.png" alt="dice-image" class="dice-image"/>
-      <button id="rollButton" class="btn">Roll Dice</button>
-
+    <img src="dice.png" alt="dice-image" class="dice-image" id="dice-image"/>
+      <button id="rollButton" class="btn" onclick="rolldice()">Roll Dice</button>
     </div>
+    <script>
+       function rolldice(){
+        const imgElelment = document.getElementById("dice-image");
+        const randomNumber = Math.floor(Math.random() * 6) + 1;
+        if(randomNumber == 1){
+            imgElelment.src = "one.png";
+        }
+        else if(randomNumber == 2){
+            imgElelment.src = "two.png";
+        }
+        else if(randomNumber == 3){
+            imgElelment.src = "three.png";
+        }
+        else if(randomNumber == 4){
+            imgElelment.src = "four.png";
+        }
+        else if(randomNumber == 5){
+            imgElelment.src = "five.png";
+        }
+        else{
+            imgElelment.src = "six.png";
+        }
+       }
+    </script>
 </body>
 </html>
